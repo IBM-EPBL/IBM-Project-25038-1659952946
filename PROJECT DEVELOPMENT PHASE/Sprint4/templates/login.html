@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animated Login Form</title>
+	<link rel="stylesheet" href="../static/css/login.css">
+</head>
+<body>
+	<div class="box">
+		<form action="/login" method="post" autocomplete="off">
+			<h2>Sign in</h2>
+			<div class="msg">{{msg}}</div>
+			<div class="inputBox">
+				<input type="text" class="input" required="required" name="username">
+				<span>Userame</span>
+				<i></i>
+			</div>
+			<div class="inputBox">
+				<input type="password"  class ="input" required="required" name="password">
+				<span>Password</span>
+				<i></i>
+			</div>
+			<div class="links">
+				<a href="/">Home</a>
+				<a href="\signup">Signup</a>
+			</div>
+			<input type="submit" value="Login">
+		</form>
+	</div>
+</body>
+</html>
